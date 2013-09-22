@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+	<header> 
+		<title>Home</title>
+	</header>
+	
+	<body>
+		<button id = "add">Add</button>
+		<button id = "clear">Clear</button>
+		<div id = "results"></div>
+		
+		
+		<script src = "js/zepto.js"></script>
+		<script src = "js/add.js"></script>
+		
+		<script>
+		$('#add').click(function() {
+			add.New($('#results'));
+		});
+		$('#clear').click(function() {
+			($('#results')).html(' ');
+		});
+		</script>
+		
+	</body>
+	
+</html>
